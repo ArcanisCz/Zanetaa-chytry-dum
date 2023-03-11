@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-import smartHomeData from '../../smartHomeData';
 import { Lights } from '../Lights';
 
 export const Dashboard = ({ data }) => {
