@@ -9,7 +9,7 @@ const App = () => {
   return (
     <div className="container">
       <Header title="Chytrý dům" />
-      <Dashboard data="" />
+      <Dashboard data={smartHomeData} />
     </div>
   );
 };
