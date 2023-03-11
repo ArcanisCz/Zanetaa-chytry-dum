@@ -9,9 +9,9 @@ export const Light = ({ name, state }) => {
 
   const handleClick = () => {
     if (state === 'on') {
-      setState('on');
-    } else {
       setState('off');
+    } else {
+      setState('on');
     }
   };
 
@@ -21,28 +21,7 @@ export const Light = ({ name, state }) => {
         <div className="light__icon">
           <img src={lightOff} />
         </div>
-        <div className="light__name">{lights.name}</div>
-      </div>
-
-      <div className="light">
-        <div className="light__icon">
-          <img src={lightOn} />
-        </div>
-        <div className="light__name">{lights.name}</div>
-      </div>
-
-      <div className="light">
-        <div className="light__icon">
-          <img src={lightOn} />
-        </div>
-        <div className="light__name">{lights.name}</div>
-      </div>
-
-      <div className="light">
-        <div className="light__icon">
-          <img src={lightOff} />
-        </div>
-        <div className="light__name">{lights.name}</div>
+        <div className="light__name">{name}</div>
       </div>
     </div>
   );
