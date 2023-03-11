@@ -1,12 +1,17 @@
 import React from 'react';
 import './style.css';
 import { Light } from '../Light';
+import smartHomeData from '../../smartHomeData';
 
-export const Lights = ({ lights }) => {
+export const Lights = ({ data }) => {
   return (
     <div className="lights">
-      {lights.map((data) => (
-        <Light key={data.name} name={data.name} state={data.state} />
+      {smartHomeData.map((data) => (
+        <Light
+          key={data.lights.name}
+          name={data.lights.name}
+          state={data.lights.state}
+        />
       ))}
       ;
     </div>
