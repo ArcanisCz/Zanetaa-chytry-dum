@@ -5,9 +5,8 @@ import { smartHomeData } from './smartHomeData';
 
 const App = () => (
   <div className="container">
-    <header>
-      <h1>Chytrý dům</h1>
-    </header>
+    <Header />
+    <Dashboard />
   </div>
 );
 
