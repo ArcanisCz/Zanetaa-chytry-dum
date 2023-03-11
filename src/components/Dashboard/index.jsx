@@ -1,9 +1,15 @@
 import React from 'react';
 import './style.css';
+import smartHomeData from '../../smartHomeData';
+import { Lights } from '../Lights';
 
 export const Dashboard = ({ data }) => {
   return (
     <main className="dashboard">
+      {smartHomeData.map((data) => (
+        <Lights key={data.lights.name} lights={data.lights.name} />
+      ))}
+      {/*
       <div className="lights">
         <div className="light">
           <div className="light__icon">
@@ -33,7 +39,7 @@ export const Dashboard = ({ data }) => {
           <div className="light__name">Chodba</div>
         </div>
       </div>
-
+*/}
       <div className="climate">
         <div className="climate__icon">
           <img src="./images/temp.svg" />
