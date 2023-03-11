@@ -1,17 +1,16 @@
 import React from 'react';
 import './style.css';
-import smartHomeData from '../../smartHomeData';
 import lightOff from './light-off.svg';
 import lightOn from './light-on.svg';
 
 export const Light = ({ name, state }) => {
-  const [state, setState] = useState('on');
+  const [lighState, setLightState] = useState(state);
 
   const handleClick = () => {
-    if (state === 'on') {
-      setState('off');
+    if (lightState === 'on') {
+      setLightState('off');
     } else {
-      setState('on');
+      setLightState('on');
     }
   };
 
@@ -19,7 +18,7 @@ export const Light = ({ name, state }) => {
     <div className="lights">
       <div onClick={handleClick} className="light">
         <div className="light__icon">
-          <img src={lightOff} />
+          <img src={lightState == on ? lightOn : lightOff} />
         </div>
         <div className="light__name">{name}</div>
       </div>

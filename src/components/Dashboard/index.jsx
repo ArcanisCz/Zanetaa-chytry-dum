@@ -5,40 +5,8 @@ import { Lights } from '../Lights';
 export const Dashboard = ({ data }) => {
   return (
     <main className="dashboard">
-      {smartHomeData.map((data) => (
-        <Lights key={data.lights.name} lights={data.lights.name} />
-      ))}
-      {/*
-      <div className="lights">
-        <div className="light">
-          <div className="light__icon">
-            <img src="./light-off.svg" />
-          </div>
-          <div className="light__name">Obývací pokoj</div>
-        </div>
+      <Lights key={data.name} name={data.name} />
 
-        <div className="light">
-          <div className="light__icon">
-            <img src="./images/light-on.svg" />
-          </div>
-          <div className="light__name">Ložnice</div>
-        </div>
-
-        <div className="light">
-          <div className="light__icon">
-            <img src="./images/light-on.svg" />
-          </div>
-          <div className="light__name">Kuchyň</div>
-        </div>
-
-        <div className="light">
-          <div className="light__icon">
-            <img src="./images/light-off.svg" />
-          </div>
-          <div className="light__name">Chodba</div>
-        </div>
-      </div>
-*/}
       <div className="climate">
         <div className="climate__icon">
           <img src="./images/temp.svg" />
