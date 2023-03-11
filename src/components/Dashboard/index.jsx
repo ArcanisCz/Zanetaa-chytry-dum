@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import { Lights } from '../Lights';
 import { Climate } from '../Climate';
+import { Blinds } from '../Blinds';
 
 export const Dashboard = ({ data }) => {
   return (
@@ -12,6 +13,7 @@ export const Dashboard = ({ data }) => {
         temperature={data.temperature}
         temperature={data.huidity}
       />
+      <Blinds key={data.name} name={data.name} />
 
       <div className="blinds">
         <div className="blinds__icon">
