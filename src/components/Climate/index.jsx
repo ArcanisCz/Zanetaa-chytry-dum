@@ -3,7 +3,7 @@ import './style.css';
 import temp from './temp.svg';
 
 export const Climate = ({ temperature, humidity }) => {
-  const [pocet, setPocet] = useState(0);
+  const [climateTemperature, setClimateTemperature] = useState(temperature);
 
   return (
     <div className="climate">
@@ -17,10 +17,16 @@ export const Climate = ({ temperature, humidity }) => {
         </div>
       </div>
       <div className="climate__controls">
-        <button onClick={() => setPocet(pocet + 1)} className="button">
+        <button
+          onClick={() => setClimateTemperature(climateTemperature + 1)}
+          className="button"
+        >
           +
         </button>
-        <button onClick={() => setPocet(pocet - 1)} className="button">
+        <button
+          onClick={() => setClimateTemperature(climateTemperature - 1)}
+          className="button"
+        >
           -
         </button>
       </div>

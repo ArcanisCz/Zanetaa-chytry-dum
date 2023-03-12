@@ -4,26 +4,26 @@ import blindsClosed from './blinds-closed.svg';
 import blindsOpen from './blinds-open.svg';
 
 export const Blinds = ({ state }) => {
-  const [zaluzie, setZaluzie] = useState(state);
+  const [blindsState, setBlindsState] = useState(state);
 
   return (
     <div className="blinds">
       <div className="blinds__icon">
-        <img src={zaluzie == 'open' ? blindsOpen : blindsClosed} />
+        <img src={blindsState == 'open' ? blindsOpen : blindsClosed} />
       </div>
       <div className="blinds__name">Žaluzie</div>
       <div className="blinds__controls">
         <button
-          className={zaluzie == 'open' ? 'button button--active' : 'button'}
-          onClick={() => setZaluzie('open')}
-          className="button button--active"
+          className={blindsState == 'open' ? 'button button--active' : 'button'}
+          onClick={() => setBlindsState('open')}
         >
           Otevřeno
         </button>
         <button
-          className={zaluzie == 'closed' ? 'button button--active' : 'button'}
-          onClick={() => setZaluzie('open')}
-          className="button"
+          className={
+            blindsState == 'closed' ? 'button button--active' : 'button'
+          }
+          onClick={() => setBlindsState('closed')}
         >
           Zavřeno
         </button>

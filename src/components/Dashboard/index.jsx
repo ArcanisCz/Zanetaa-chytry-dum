@@ -8,7 +8,7 @@ import { Energy } from '../Energy';
 export const Dashboard = ({ data }) => {
   return (
     <main className="dashboard">
-      <Lights key={data.name} name={data.name} />
+      <Lights key={data.lights} lights={data.lights} />
       <Climate
         key={data.temperatue}
         temperature={data.temperature}

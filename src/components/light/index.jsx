@@ -4,7 +4,7 @@ import lightOff from './light-off.svg';
 import lightOn from './light-on.svg';
 
 export const Light = ({ name, state }) => {
-  const [lighState, setLightState] = useState(state);
+  const [lightState, setLightState] = useState(state);
 
   const handleClick = () => {
     if (lightState === 'on') {
