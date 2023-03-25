@@ -16,13 +16,11 @@ export const Light = ({ name, state }) => {
   };
 
   return (
-    <div className="lights">
-      <div onClick={handleClick} className="light">
-        <div className="light__icon">
-          <img src={lightState == 'on' ? lightOn : lightOff} />
-        </div>
-        <div className="light__name">{name}</div>
+    <div onClick={handleClick} className="light">
+      <div className="light__icon">
+        <img src={lightState == 'on' ? lightOn : lightOff} />
       </div>
+      <div className="light__name">{name}</div>
     </div>
   );
 };

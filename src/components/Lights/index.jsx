@@ -7,8 +7,8 @@ import { useState } from 'react';
 export const Lights = ({ lights }) => {
   return (
     <div className="lights">
-      {lights.map((lights) => (
-        <Light key={lights.name} name={lights.name} state={lights.state} />
+      {lights.map((light) => (
+        <Light key={light.name} name={light.name} state={light.state} />
       ))}
       ;
     </div>
