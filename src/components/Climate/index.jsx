@@ -4,7 +4,7 @@ import temp from './temp.svg';
 import { useState } from 'react';
 
 export const Climate = ({ temperature, humidity }) => {
-  const [climateTemperature, setClimateTemperature] = useState(24);
+  const [climateTemperature, setClimateTemperature] = useState(temperature);
 
   return (
     <div className="climate">

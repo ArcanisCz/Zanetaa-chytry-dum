@@ -3,6 +3,7 @@ import './style.css';
 import electricity1 from './electricity1.svg';
 import water1 from './water1.svg';
 import { useState } from 'react';
+import smartHomeData from '../../smartHomeData';
 
 export const Energy = ({ electricity, water }) => {
   return (

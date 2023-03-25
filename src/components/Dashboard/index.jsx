@@ -11,12 +11,15 @@ export const Dashboard = ({ data }) => {
     <main className="dashboard">
       <Lights key={data.lights} lights={data.lights} />
       <Climate
-        key={data.temperatue}
-        temperature={data.temperature}
-        temperature={data.huidity}
+        key={data.climate.temperatue}
+        temperature={data.climate.temperature}
+        humidity={data.climate.humidity}
       />
       <Blinds state={data.blinds} />
-      <Energy electricity={data.electricity} water={data.water} />
+      <Energy
+        electricity={data.energyConsumption.electricity}
+        water={data.energyConsumption.water}
+      />
     </main>
   );
 };
