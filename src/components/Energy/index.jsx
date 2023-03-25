@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 import electricity1 from './electricity1.svg';
 import water1 from './water1.svg';
+import { useState } from 'react';
 
 export const Energy = ({ electricity, water }) => {
   return (

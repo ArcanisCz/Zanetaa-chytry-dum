@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 import temp from './temp.svg';
+import { useState } from 'react';
 
 export const Climate = ({ temperature, humidity }) => {
   const [climateTemperature, setClimateTemperature] = useState(temperature);

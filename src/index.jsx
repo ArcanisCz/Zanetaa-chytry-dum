@@ -4,6 +4,7 @@ import './style.css';
 import { smartHomeData } from './smartHomeData.js';
 import { Header } from './components/Header';
 import { Dashboard } from './components/Dashboard';
+import { useState } from 'react';
 
 const App = () => {
   return (
